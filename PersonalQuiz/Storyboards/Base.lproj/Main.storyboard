@@ -86,7 +86,7 @@
         <!--Вопрос №-->
         <scene sceneID="fZw-00-ejh">
             <objects>
-                <viewController id="rP3-Am-7RB" sceneMemberID="viewController">
+                <viewController id="rP3-Am-7RB" customClass="ViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OOx-bO-oSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,7 +268,7 @@
         <!--Результат-->
         <scene sceneID="J9C-fN-kCx">
             <objects>
-                <viewController id="Fnh-b3-9Nh" sceneMemberID="viewController">
+                <viewController id="Fnh-b3-9Nh" customClass="ResultViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8rD-o7-RE8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +299,9 @@
                             <constraint firstItem="opD-ao-INU" firstAttribute="centerY" secondItem="8rD-o7-RE8" secondAttribute="centerY" id="q9u-ag-W33"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="wKv-iC-hOz"/>
+                    <navigationItem key="navigationItem" title="Результат" id="wKv-iC-hOz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ABD-mn-Pee"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qC8-7V-i7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
