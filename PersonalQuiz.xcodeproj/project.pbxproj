@@ -13,6 +13,7 @@
 		8A98E5CB2965570A00EDEA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A98E5C92965570A00EDEA39 /* Main.storyboard */; };
 		8A98E5CD2965570C00EDEA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A98E5CC2965570C00EDEA39 /* Assets.xcassets */; };
 		8A98E5D02965570C00EDEA39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A98E5CE2965570C00EDEA39 /* LaunchScreen.storyboard */; };
+		8A98E5D82966026300EDEA39 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98E5D72966026300EDEA39 /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A98E5CC2965570C00EDEA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A98E5CF2965570C00EDEA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A98E5D12965570C00EDEA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A98E5D72966026300EDEA39 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		8A98E5C22965570A00EDEA39 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				8A98E5C32965570A00EDEA39 /* AppDelegate.swift */,
-				8A98E5C52965570A00EDEA39 /* SceneDelegate.swift */,
-				8A98E5C72965570A00EDEA39 /* ViewController.swift */,
-				8A98E5C92965570A00EDEA39 /* Main.storyboard */,
-				8A98E5CC2965570C00EDEA39 /* Assets.xcassets */,
+				8A98E5D9296602F500EDEA39 /* App */,
+				8A98E5DA2966031300EDEA39 /* ViewControllers */,
+				8A98E5DB2966034000EDEA39 /* Storyboards */,
+				8A98E5DC2966037000EDEA39 /* Models */,
+				8A98E5DD2966037E00EDEA39 /* Resources */,
 				8A98E5CE2965570C00EDEA39 /* LaunchScreen.storyboard */,
-				8A98E5D12965570C00EDEA39 /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		8A98E5D9296602F500EDEA39 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A98E5C32965570A00EDEA39 /* AppDelegate.swift */,
+				8A98E5C52965570A00EDEA39 /* SceneDelegate.swift */,
+				8A98E5D12965570C00EDEA39 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A98E5DA2966031300EDEA39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A98E5C72965570A00EDEA39 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A98E5DB2966034000EDEA39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A98E5C92965570A00EDEA39 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A98E5DC2966037000EDEA39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A98E5D72966026300EDEA39 /* Questions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A98E5DD2966037E00EDEA39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A98E5CC2965570C00EDEA39 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A98E5C82965570A00EDEA39 /* ViewController.swift in Sources */,
+				8A98E5D82966026300EDEA39 /* Questions.swift in Sources */,
 				8A98E5C42965570A00EDEA39 /* AppDelegate.swift in Sources */,
 				8A98E5C62965570A00EDEA39 /* SceneDelegate.swift in Sources */,
 			);
@@ -301,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MihailKisluhin.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MihailKisluhin.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
